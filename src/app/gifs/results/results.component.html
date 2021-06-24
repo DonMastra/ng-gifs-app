@@ -1,1 +1,12 @@
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit iste voluptatibus delectus iure maiores quos voluptatem? Sit rem soluta quia repudiandae. Incidunt est porro optio quaerat ducimus, tenetur placeat ad?
+<div class="row">
+    <div *ngFor="let gif of results" class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+        <div class="card">
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">
+                    {{ gif.title }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
